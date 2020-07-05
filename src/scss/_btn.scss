@@ -1,0 +1,15 @@
+.btn {
+    
+    background-color: #4c84ff;
+    color: white;
+    font-size: 1.9rem;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    font-weight: 400;
+    font-family: inherit;
+    align-self: flex-start;
+    &:link,
+    &:visited {
+        color: white;
+    }
+}

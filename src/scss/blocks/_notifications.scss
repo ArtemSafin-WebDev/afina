@@ -1,0 +1,49 @@
+
+
+
+.notifications__list-item {
+    margin-bottom: 2rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+.notifications__card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: var(--text-color);
+    padding: 2rem;
+    min-height: 11.4rem;
+    transition: background-color .2s;
+    svg {
+        width: 2rem;
+        height: 2rem;
+        flex-shrink: 0;
+        fill: #325895;
+        margin-left: 4rem;
+    }
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &:hover {
+        background-color: #e7e7e7;
+    }
+}
+
+
+.notifications__card-content {
+    width: 50%;
+    flex-grow: 1;
+    font-size: 1.66rem;
+}
+
+
+.notifications__card-status {
+    font-weight: 700;
+    font-size: 1.66rem;
+    margin-bottom: 2rem;
+}

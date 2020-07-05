@@ -1,0 +1,38 @@
+.user {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2.5rem;
+}
+
+
+.user__profile {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-right: 2.4rem;
+    transition: color .2s;
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+
+.user__logout {
+    color: var(--text-color);
+    transition: color .2s;
+    svg {
+        display: block;
+        width: 2.4rem;
+        height: 2.4rem;
+        flex-shrink: 0;
+      
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}

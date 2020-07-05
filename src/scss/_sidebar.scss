@@ -1,0 +1,126 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    min-height: 100vh;
+    box-shadow: 0 0 1.1rem .4rem rgba(black, .13);
+    padding: 5rem 2.5rem;
+    padding-bottom: 2rem;
+      
+}
+
+
+.sidebar__logo {
+    margin-bottom: 4.8rem;
+}
+
+.sidebar__logo-image {
+    display: block;
+    width: 13.6rem;
+    height: auto;
+}
+
+.sidebar__nav {
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.sidebar__nav-link {
+    color: var(--blue-text);
+    font-size: 2rem;
+    line-height: 1.2;
+    display: inline-flex;
+    align-items: center;
+    transition: color .2s;
+    margin-bottom: 2.5rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    svg {
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        fill: currentColor;
+        margin: 0;
+    }
+    &:link,
+    &:visited {
+        color: var(--blue-text);
+    }
+
+    &:hover,
+    &.active {
+        color: #575962;
+    }
+}
+
+
+.sidebar__user-policy {
+    display: flex;
+    align-items: center;
+    color: var(--blue-text);
+    font-size: 1.6rem;
+    transition: color .2s;
+    margin-bottom: 2.2rem;
+    &:link,
+    &:visited {
+        color: var(--blue-text);
+    }
+
+    svg {
+        margin-right: 1.2rem;
+    }
+
+
+    &:hover {
+        color: var(--text-color);
+    }
+    
+}
+
+
+.sidebar__collapse-btn-wrapper {
+    margin: 0 -1.5rem;
+}
+
+.sidebar__collapse-btn {
+    display: block;
+    width: 100%;
+    &:hover {
+        .sidebar__collapse-btn-content {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    }
+}
+
+.sidebar__collapse-btn-content {
+    background-color: #f7f8fa;
+    border-radius: .5rem;
+    padding: 1.4rem 1.8rem;
+    color: var(--text-color);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    transition: color .2s, background-color .2s;
+    svg {
+        width: 1.5rem;
+        height: 1.8rem;
+        flex-shrink: 0;
+        margin-right: 2.4rem;
+        fill: currentColor;
+    }
+}
+
+
+
+.sidebar__nav-link-icon-container {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.2rem;
+    flex-shrink: 0;
+    position: relative;
+}

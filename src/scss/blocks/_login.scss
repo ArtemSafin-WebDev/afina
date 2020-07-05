@@ -1,0 +1,115 @@
+.login {
+    background-color: #fff;
+    margin: auto;
+    width: 41rem;
+    max-width: 100%;
+    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 5rem;
+}
+
+.login__logo {
+    width: 14rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__form-row {
+    margin-bottom: 2.5rem;
+  
+}
+
+
+.login__form-label {
+    display: block;
+    margin-bottom: 1.7rem;
+    font-weight: 700;
+    font-size: 1.66rem;
+    color: var(--blue-text);
+}
+
+
+.login__form-input {
+   
+    width: 100%;
+    font: inherit;
+    color: var(--text-color);
+    font-size: 1.66rem;
+    border-radius: 2rem;
+    padding: .5rem 2rem;
+    height: 3.6rem;
+    border: 1px solid var(--blue-text);
+    transition: border-color .2s;
+
+    &:focus {
+        outline: none;
+        border-color: #4c84ff;
+    }
+}
+
+
+.login__form-submit {
+    margin: 0 auto;
+    background-color: #4c84ff;
+    color: white;
+    font-size: 1.9rem;
+    padding: .8rem 4rem;
+    border-radius: 2rem;
+    font-weight: 400;
+    font-family: inherit;
+    margin-top: 1.5rem;
+    &--short {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.login__back-link,
+.login__remember-password-link {
+    text-align: center;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 4rem;
+    transition: color .2s;
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &:hover {
+        color: #4c84ff;
+    }
+}
+
+.login__back-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.5rem;
+    svg {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 1.4rem;
+        // transform: scaleX(-1);
+    }
+}
+
+.login__remember-password {
+    margin-bottom: 4rem;
+}
+.login__remember-password-heading {
+    font-weight: 500;
+    font-size: 1.66rem;
+    margin-bottom: 1.8rem;
+    text-align: center;
+}
+
+.login__remember-password-text {
+    font-size: 1.66rem;
+}

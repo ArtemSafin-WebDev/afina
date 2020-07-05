@@ -1,0 +1,13 @@
+.auth-wrapper {
+    min-height: 100vh;
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/tower-bg.jpg');
+}

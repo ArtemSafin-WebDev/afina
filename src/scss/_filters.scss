@@ -1,0 +1,92 @@
+.filters {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.filters__icon {
+    flex-shrink: 0;
+    margin-right: 3rem;
+    color: var(--blue-text);
+    svg {
+        width: 2.2rem;
+        height: 2.2rem;
+        flex-shrink: 0;
+        fill: var(--blue-text);
+        display: block;
+        margin: 0;
+    }
+}
+
+.filters__form {
+    display: flex;
+    align-items: center;
+}
+
+.filters__custom-select {
+    margin-right: 1rem;
+    .choices {
+        font-size: 1.4rem;
+    }
+
+    .choices__inner {
+        padding: 0;
+        border-radius: 1.5rem;
+        min-height: auto;
+        border-color: var(--blue-text);
+        background: transparent;
+        min-width: 13rem;
+    }
+
+    .choices[data-type*='select-one'] .choices__inner {
+        padding: 0;
+    }
+
+    .choices__list--single {
+        padding: 0;
+        padding: 0.5rem 1rem;
+        padding-right: 2.5rem;
+    }
+
+    .choices__list--dropdown {
+        border-radius: 1rem;
+        background-color: #f3f3f6;
+        margin-top: 0.5rem;
+        max-height: auto;
+        word-break: initial;
+        border-color: var(--blue-text);
+    }
+
+    .choices__list--dropdown .choices__list {
+        max-height: none;
+    }
+
+    .choices__list--dropdown .choices__item {
+        padding: 1rem !important;
+    }
+
+    .choices[data-type*='select-one']:after {
+        margin-top: 0;
+        border: none;
+        height: 1.2rem;
+        width: 1.6rem;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath fill='%23b4b9cb' d='M225.813 48.907L128 146.72 30.187 48.907 0 79.093l128 128 128-128z'/%3E%3C/svg%3E");
+        right: 1.2rem;
+        transition: transform 0.2s;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .choices[data-type*='select-one'].is-open::after {
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    .choices__list--dropdown .choices__item--selectable.is-highlighted {
+        background-color: var(--blue-text);
+        background-color: var(--primary-color);
+        color: white;
+    }
+}
