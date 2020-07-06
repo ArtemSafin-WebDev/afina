@@ -33,6 +33,9 @@
     width: 29rem;
     flex-shrink: 0;
     align-self: flex-start;
+    .sidebar-collapsed & {
+        width: 10rem;
+    }
 }
 
 .page-main {

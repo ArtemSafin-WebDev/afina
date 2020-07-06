@@ -1,6 +1,7 @@
 <div class="sidebar">
     <div class="sidebar__logo">
         <img src="img/logo.png" alt="" class="sidebar__logo-image" width="136" />
+        <img src="img/logo-short.png" alt="" class="sidebar__logo-image sidebar__logo-image--collapsed" />
     </div>
 
     <nav class="sidebar__nav">
@@ -42,15 +43,21 @@
         <svg width="20" height="26" aria-hidden="true" class="icon-doc">
             <use xlink:href="#doc" />
         </svg>
-        Политика конфиденциальности
+        <span class="sidebar__user-policy-text">
+            Политика конфиденциальности
+        </span>
+       
     </a>
     <div class="sidebar__collapse-btn-wrapper">
-        <button class="sidebar__collapse-btn">
+        <button class="sidebar__collapse-btn js-toggle-sidebar">
             <span class="sidebar__collapse-btn-content">
                 <svg width="10" height="18" aria-hidden="true" class="icon-arrow-left">
                     <use xlink:href="#arrow-left" />
                 </svg>
-                Свернуть
+                <span class="sidebar__collapse-btn-text">
+                    Свернуть
+                </span>
+                
             </span>
         </button>
     </div>

@@ -6,6 +6,13 @@
     box-shadow: 0 0 1.1rem .4rem rgba(black, .13);
     padding: 5rem 2.5rem;
     padding-bottom: 2rem;
+
+
+    .sidebar-collapsed & {
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
       
 }
 
@@ -18,6 +25,19 @@
     display: block;
     width: 13.6rem;
     height: auto;
+    &--collapsed {
+        width: 3.6rem;
+        
+        display: none;
+    }
+
+    .sidebar-collapsed & {
+        display: none;
+        &--collapsed {
+            
+            display: block;
+        }
+    }
 }
 
 .sidebar__nav {
@@ -45,6 +65,9 @@
         height: 100%;
         fill: currentColor;
         margin: 0;
+        .sidebar-collapsed & {
+            margin: 0;
+        }
     }
     &:link,
     &:visited {
@@ -58,6 +81,12 @@
         .sidebar__nav-link-icon-container  .red-dot {
             opacity: 1;
         }
+    }
+}
+
+.sidebar__nav-link-text {
+    .sidebar-collapsed & {
+        display: none;
     }
 }
 
@@ -76,6 +105,9 @@
 
     svg {
         margin-right: 1.2rem;
+        .sidebar-collapsed & {
+            margin: 0;
+        }
     }
 
 
@@ -116,6 +148,10 @@
         flex-shrink: 0;
         margin-right: 2.4rem;
         fill: currentColor;
+        .sidebar-collapsed & {
+            margin: 0;
+            transform: scaleX(-1);
+        }
     }
 }
 
@@ -138,5 +174,13 @@
         top: .4rem;
         opacity: 0;
         transition: opacity .2s;
+    }
+}
+
+
+.sidebar__collapse-btn-text,
+.sidebar__user-policy-text {
+    .sidebar-collapsed & {
+        display: none;
     }
 }

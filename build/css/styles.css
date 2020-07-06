@@ -1149,6 +1149,8 @@ img.lazyload:not([src]) {
       flex-shrink: 0;
   -ms-flex-item-align: start;
       align-self: flex-start; }
+  .sidebar-collapsed .page-sidebar {
+    width: 10rem; }
 
 .page-main {
   width: 50%;
@@ -1185,6 +1187,12 @@ img.lazyload:not([src]) {
           box-shadow: 0 0 1.1rem 0.4rem rgba(0, 0, 0, 0.13);
   padding: 5rem 2.5rem;
   padding-bottom: 2rem; }
+  .sidebar-collapsed .sidebar {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem; }
 
 .sidebar__logo {
   margin-bottom: 4.8rem; }
@@ -1193,6 +1201,13 @@ img.lazyload:not([src]) {
   display: block;
   width: 13.6rem;
   height: auto; }
+  .sidebar__logo-image--collapsed {
+    width: 3.6rem;
+    display: none; }
+  .sidebar-collapsed .sidebar__logo-image {
+    display: none; }
+    .sidebar-collapsed .sidebar__logo-image--collapsed {
+      display: block; }
 
 .sidebar__nav {
   margin-bottom: auto;
@@ -1229,12 +1244,17 @@ img.lazyload:not([src]) {
     height: 100%;
     fill: currentColor;
     margin: 0; }
+    .sidebar-collapsed .sidebar__nav-link svg {
+      margin: 0; }
   .sidebar__nav-link:link, .sidebar__nav-link:visited {
     color: var(--blue-text); }
   .sidebar__nav-link:hover, .sidebar__nav-link.active {
     color: #575962; }
     .sidebar__nav-link:hover .sidebar__nav-link-icon-container .red-dot, .sidebar__nav-link.active .sidebar__nav-link-icon-container .red-dot {
       opacity: 1; }
+
+.sidebar-collapsed .sidebar__nav-link-text {
+  display: none; }
 
 .sidebar__user-policy {
   display: -webkit-box;
@@ -1252,6 +1272,8 @@ img.lazyload:not([src]) {
     color: var(--blue-text); }
   .sidebar__user-policy svg {
     margin-right: 1.2rem; }
+    .sidebar-collapsed .sidebar__user-policy svg {
+      margin: 0; }
   .sidebar__user-policy:hover {
     color: var(--text-color); }
 
@@ -1286,6 +1308,10 @@ img.lazyload:not([src]) {
         flex-shrink: 0;
     margin-right: 2.4rem;
     fill: currentColor; }
+    .sidebar-collapsed .sidebar__collapse-btn-content svg {
+      margin: 0;
+      -webkit-transform: scaleX(-1);
+              transform: scaleX(-1); }
 
 .sidebar__nav-link-icon-container {
   width: 2rem;
@@ -1305,6 +1331,10 @@ img.lazyload:not([src]) {
     opacity: 0;
     -webkit-transition: opacity .2s;
     transition: opacity .2s; }
+
+.sidebar-collapsed .sidebar__collapse-btn-text, .sidebar-collapsed
+.sidebar__user-policy-text {
+  display: none; }
 
 .user {
   display: -webkit-box;
