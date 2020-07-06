@@ -11,7 +11,7 @@
 
         <link rel="stylesheet" href="css/styles.min.css" />
         <title>
-            Sitemap
+            Afina - Восстановление пароля
         </title>
     </head>
     <body class="no-touch" ontouchstart="">
@@ -115,130 +115,26 @@
         </div>
 
         <div class="page-content">
-            <aside class="page-sidebar">
-                <div class="sidebar">
-                    <div class="sidebar__logo">
-                        <img src="img/logo.png" alt="" class="sidebar__logo-image" width="136" />
-                    </div>
-
-                    <nav class="sidebar__nav">
-                        <a href="#" class="sidebar__nav-link active">
-                            <span class="sidebar__nav-link-icon-container">
-                                <svg width="24" height="24" aria-hidden="true" class="icon-calendar">
-                                    <use xlink:href="#calendar" />
-                                </svg>
-                            </span>
-
-                            <span class="sidebar__nav-link-text">
-                                Мероприятия
-                            </span>
-                        </a>
-                        <a href="#" class="sidebar__nav-link">
-                            <span class="sidebar__nav-link-icon-container">
-                                <svg width="24" height="24" aria-hidden="true" class="icon-bell">
-                                    <use xlink:href="#bell" />
-                                </svg>
-                                <span class="red-dot"></span>
-                            </span>
-                            <span class="sidebar__nav-link-text">
-                                Уведомления
-                            </span>
-                        </a>
-                        <a href="#" class="sidebar__nav-link">
-                            <span class="sidebar__nav-link-icon-container">
-                                <svg width="24" height="24" aria-hidden="true" class="icon-users">
-                                    <use xlink:href="#users" />
-                                </svg>
-                            </span>
-                            <span class="sidebar__nav-link-text">
-                                Пользователи
-                            </span>
-                        </a>
-                    </nav>
-
-                    <a href="#" download class="sidebar__user-policy">
-                        <svg width="20" height="26" aria-hidden="true" class="icon-doc">
-                            <use xlink:href="#doc" />
-                        </svg>
-                        Политика конфиденциальности
-                    </a>
-                    <div class="sidebar__collapse-btn-wrapper">
-                        <button class="sidebar__collapse-btn">
-                            <span class="sidebar__collapse-btn-content">
-                                <svg width="10" height="18" aria-hidden="true" class="icon-arrow-left">
-                                    <use xlink:href="#arrow-left" />
-                                </svg>
-                                Свернуть
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </aside>
             <main class="page-main">
-                <div class="wrapper">
-                    <div class="user">
-                        <a href="account.html" class="user__profile">
-                            Владимир Медведев
-                        </a>
-                        <a href="login.html" class="user__logout">
-                            <svg width="24" height="24" aria-hidden="true" class="icon-logout">
-                                <use xlink:href="#logout" />
+                <div class="auth-wrapper">
+                    <div class="login">
+                        <img src="img/logo.png" alt="" class="login__logo" width="140" />
+                        <div class="login__remember-password">
+                            <h2 class="login__remember-password-heading">
+                                Спасибо
+                            </h2>
+                            <div class="login__remember-password-text">
+                                Создайте новый пароль по ссылке в письме, которое мы отправили на mail@gmail.com
+                            </div>
+                        </div>
+
+                        <a href="login.html" class="login__back-link">
+                            <svg width="10" height="18" aria-hidden="true" class="icon-arrow-left">
+                                <use xlink:href="#arrow-left" />
                             </svg>
+                            Вернуться на страницу входа
                         </a>
                     </div>
-
-                    <style>
-                        .filelist {
-                            max-width: 600px;
-                            margin-top: 50px;
-                        }
-                        .filelist__item {
-                            margin-bottom: 20px;
-                        }
-
-                        .filelist__link:link,
-                        .filelist__link:visited {
-                            display: block;
-                            color: white;
-                            background-color: yellowgreen;
-                            padding: 20px;
-                        }
-                    </style>
-
-                    <div id="sitemap"></div>
-
-                    <script>
-                        (async () => {
-                            const sitemap = document.querySelector('#sitemap');
-                            const filelist = await fetch('filelist.json');
-
-                            if (!filelist.ok) {
-                                sitemap.textContent = 'Error happened';
-                                sitemap.style.color = 'red';
-                                return;
-                            }
-                            let filelistParsed = await filelist.json();
-
-                            filelistParsed = filelistParsed.filter(element => element !== 'sitemap.html');
-
-                            const ul = document.createElement('ul');
-                            ul.className = 'filelist';
-
-                            filelistParsed.forEach(item => {
-                                const filelistItem = document.createElement('li');
-                                filelistItem.className = 'filelist__item';
-                                const filelistLink = document.createElement('a');
-                                filelistLink.className = 'filelist__link';
-                                filelistLink.href = item;
-                                filelistLink.textContent = item;
-                                filelistLink.target = '_blank';
-                                filelistItem.appendChild(filelistLink);
-                                ul.appendChild(filelistItem);
-                            });
-
-                            sitemap.appendChild(ul);
-                        })();
-                    </script>
                 </div>
             </main>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

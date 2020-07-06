@@ -8,8 +8,17 @@
     font-weight: 400;
     font-family: inherit;
     align-self: flex-start;
+  
     &:link,
     &:visited {
         color: white;
+    }
+
+    &--grey {
+        background-color: #dcdcdc;
+        &:link,
+        &:visited {
+            color: var(--text-color);
+        }
     }
 }

@@ -4,6 +4,10 @@
     border-bottom: 1px solid var(--blue-text);
     margin-top: -1.5rem;
     margin-bottom: 3rem;
+
+    .light-bg & {
+        border-color: #dddfe8;
+    }
 }
 
 
@@ -34,5 +38,30 @@
         &::after {
             opacity: 1;
         }
+    }
+}
+
+
+.inner-nav__add-link {
+    align-self: center;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #4c84ff;
+    color: var(--text-color);
+
+    svg {
+        width: 1.4rem;
+        height: 1.4rem;
+        fill: #4c84ff;
+        margin: 0;
+        margin-left: 1.5rem;
+    }
+
+    &:link,
+    &:visited {
+        color: var(--text-color);
     }
 }

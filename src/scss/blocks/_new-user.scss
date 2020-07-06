@@ -1,46 +1,80 @@
-.filters {
+.new-user {
+
+}
+
+
+.new-user__content {
+    padding: 3rem 4.5rem;
+    background-color: #fff;
+    padding-bottom: 4.5rem;
+}
+
+.new-user__form {
     display: flex;
-    align-items: center;
-    margin-bottom: 3rem;
+    flex-direction: column;
 }
 
-.filters__icon {
-    flex-shrink: 0;
-    margin-right: 3rem;
-    color: var(--blue-text);
-
-    .light-bg & {
-        color: #dddfe8;
-    }
-    svg {
-        width: 2.2rem;
-        height: 2.2rem;
-        flex-shrink: 0;
-        fill: var(--blue-text);
-        display: block;
-        margin: 0;
+.new-user__form-heading {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2.4rem;
+    margin-top: 1rem;
+    &:first-child {
+        margin-top: 0;
     }
 }
 
-.filters__form {
+
+.new-user__form-row {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    margin: -1rem -1.5rem;
 }
 
-.filters__custom-select {
-    margin-right: 1rem;
+
+.new-user__form-col {
+    width: 33.33%;
+    padding: 1rem 1.5rem;
+}
+
+.new-user__form-group {
+    margin-bottom: 2rem;
+}
+
+.new-user__form-label {
+    font-size: 1.66rem;
+    font-weight: 700;
+    
+    color: #b4b9cb;
+    
+}
+
+
+.new-user__form-input {
+    margin-top: 1.7rem;
+    border: 1px solid var(--blue-text);
+    font: inherit;
+    border-radius: 2rem !important;
+    padding: 0.3rem 1.5rem;
+    height: 3.5rem;
+
+}
+
+
+.new-user__form-select {
+    margin-top: 1.7rem;
     .choices {
-        font-size: 1.4rem;
+        font-size: 1.66rem;
     }
 
     .choices__inner {
         padding: 0;
-        border-radius: 1.5rem !important;
+        border-radius: 2rem !important;
         min-height: auto;
         border-color: var(--blue-text);
         background: transparent;
         min-width: 16rem;
-        font-size: 1.4rem;
+        font-size: 1.66rem;
 
         .light-bg & {
             border-color: #dddfe8;
@@ -53,7 +87,7 @@
 
     .choices__list--single {
         padding: 0;
-        padding: 0.5rem 1rem;
+        padding: 0.7rem 1.5rem;
         padding-right: 3.5rem;
     }
 
@@ -108,4 +142,10 @@
         background-color: var(--primary-color);
         color: white;
     }
+}
+
+
+.new-user__form-submit {
+    margin: 0 auto;
+    margin-top: 3rem;
 }

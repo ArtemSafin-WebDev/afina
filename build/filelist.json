@@ -1,8 +1,16 @@
 [
   "account.html",
+  "all-accounts-admin.html",
   "all-accounts.html",
+  "event-approved.html",
+  "event-for-approval.html",
+  "event.html",
+  "events-calendar.html",
   "index.html",
+  "login-success.html",
   "login.html",
+  "my-events.html",
+  "new-user.html",
   "remember-password.html",
   "sitemap.html"
 ]

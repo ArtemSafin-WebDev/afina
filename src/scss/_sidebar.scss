@@ -54,6 +54,10 @@
     &:hover,
     &.active {
         color: #575962;
+
+        .sidebar__nav-link-icon-container  .red-dot {
+            opacity: 1;
+        }
     }
 }
 
@@ -123,4 +127,16 @@
     margin-right: 1.2rem;
     flex-shrink: 0;
     position: relative;
+
+    .red-dot {
+        background-color: #d24a43;
+        position: absolute;
+        height: 0.7rem;
+        width: 0.7rem;
+        border-radius: 50%;
+        right: .2rem;
+        top: .4rem;
+        opacity: 0;
+        transition: opacity .2s;
+    }
 }

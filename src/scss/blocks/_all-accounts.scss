@@ -1,0 +1,104 @@
+.all-accounts__results {
+    background-color: #fff;
+    table {
+        font-size: 2rem;
+        width: 100%;
+        border-collapse: collapse;
+        th, td {
+            padding: 1.8rem;
+            text-align: left;
+            vertical-align: middle;
+            border-bottom: 1px solid #f3f3f6;
+
+            a {
+                &:link,
+                &:visited {
+                    color: inherit;
+                }
+
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
+
+        tr {
+            &:last-child {
+                td {
+                    border-bottom: none;
+                }
+            }
+           
+        }
+        thead {
+            th {
+                font-weight: 500;
+               
+            }
+        }
+
+
+        .actions {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            .icon-dots {
+                width: 2.7rem;
+                height: 2.7rem;
+                margin: 0;
+                fill: #b4b9cb;
+            }
+
+            &:hover {
+                .actions__dropdown-wrapper {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: opacity .3s, visibility .3s;
+                }
+            }
+        }
+
+        .actions__dropdown-wrapper {
+            right: 0;
+            top: 100%;
+            padding-top: .5rem;
+            position: absolute;
+            width: 21rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .3s, visibility 0s linear .3s;
+            z-index: 100;
+        }
+
+
+        .actions__dropdown {
+            background-color: #fff;
+            box-shadow: 0 0 1rem rgba(black, .2);
+            padding: 2.2rem;
+        }
+
+
+        .actions__link {
+            font-weight: 500;
+            font-size: 1.66rem;
+            margin-bottom: 1.4rem;
+            display: block;
+            color: var(--text-color);
+            transition: color .2s;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:link,
+            &:visited {
+                color: var(--text-color);
+            }
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+
+        
+    }
+}

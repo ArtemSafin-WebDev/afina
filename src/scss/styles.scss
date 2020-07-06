@@ -10,6 +10,7 @@
 @import 'btn';
 @import 'inner-nav';
 @import 'filters';
+@import 'pagination';
 
 // Blocks styles
 
@@ -17,4 +18,8 @@
 @import 'blocks/login';
 @import 'blocks/account';
 @import 'blocks/all-accounts';
+@import 'blocks/events-calendar';
+@import 'blocks/my-events';
+@import 'blocks/event';
+@import 'blocks/new-user';
 
