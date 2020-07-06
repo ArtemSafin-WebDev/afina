@@ -16,6 +16,7 @@
     "not ie <= 9"
   ],
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "body-scroll-lock": "^2.6.4",
     "choices.js": "^9.0.1",
     "core-js": "^3.1.4",
@@ -26,6 +27,7 @@
     "moment": "^2.24.0",
     "object-fit-images": "^3.2.4",
     "picturefill": "^3.0.3",
+    "pikaday": "^1.8.0",
     "swiper": "~5.2.1"
   },
   "devDependencies": {

@@ -1,2 +1,14 @@
 @import '../../node_modules/swiper/css/swiper';
 @import '../../node_modules/choices.js/public/assets/styles/choices';
+@import '../../node_modules/air-datepicker/dist/css/datepicker';
+
+
+.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current-,.datepicker--cell.-selected-.-focus- {
+    background: #4c84ff;
+}
+
+.datepicker--cell.-current-, .datepicker--cell.-current-.-in-range- {
+    background: #b4b9cb;
+    color: white;
+}
+

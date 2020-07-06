@@ -11,7 +11,7 @@
 
         <link rel="stylesheet" href="css/styles.min.css" />
         <title>
-            Afina - Мероприятие
+            Afina - Создать мероприятие
         </title>
     </head>
     <body class="no-touch" ontouchstart="">
@@ -205,280 +205,235 @@
                         </a>
                     </div>
 
-                    <section class="event">
+                    <section class="create-event">
                         <h2 class="section-heading">
-                            Отчеты
+                            Мероприятия
                         </h2>
-
-                        <div class="event__content">
-                            <div class="event__top-block">
-                                <h1 class="event__heading">
-                                    Компания «Ипсен» заявляет о регистрации расширенного показания по препарату Диспорт
-                                </h1>
-                                <div class="event__info">
-                                    <div class="event__info-item">
-                                        <div class="event__info-item-key">
-                                            Город
-                                        </div>
-                                        <div class="event__info-item-value">
-                                            Москва
-                                        </div>
+                        <div class="create-event__content">
+                            <form action="/" method="POST" class="create-event__form">
+                                <div class="create-event__form-group create-event__form-group--fullwidth">
+                                    <label class="create-event__form-label">
+                                        Название
+                                        <span class="create-event__form-input-wrapper">
+                                            <input type="text" class="create-event__form-input" />
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="create-event__form-group create-event__form-group--halfwidth">
+                                    <label class="create-event__form-label">
+                                        Город
+                                    </label>
+                                    <div class="create-event__form-select">
+                                        <select name="role" class="js-custom-select">
+                                            <option value="1">Казань</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
                                     </div>
-                                    <div class="event__info-item">
-                                        <div class="event__info-item-key">
-                                            Дата
-                                        </div>
-                                        <div class="event__info-item-value">
-                                            15/08/2020
-                                        </div>
+                                </div>
+                                <div class="create-event__form-group">
+                                    <label class="create-event__form-label">
+                                        Дата и время начала
+                                        <span class="create-event__form-input-wrapper create-event__form-input-wrapper--calendar">
+                                            <input type="text" class="create-event__form-input js-datetime-input datepicker-here" data-timepicker="true" />
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="create-event__form-group">
+                                    <label class="create-event__form-label">
+                                        Продолжительность (ч)
+                                        <span class="create-event__form-input-wrapper create-event__form-input-wrapper--clock">
+                                            <input type="text" class="create-event__form-input js-numeric-input" />
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="create-event__form-group create-event__form-group--halfwidth">
+                                    <label class="create-event__form-label">
+                                        Место проведения
+                                        <span class="create-event__form-input-wrapper">
+                                            <input type="text" class="create-event__form-input" />
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="create-event__form-group create-event__form-group--halfwidth create-event__form-group--high">
+                                    <label class="create-event__form-label">
+                                        Обоснование
+                                        <span class="create-event__form-input-wrapper create-event__form-input-wrapper--flexible">
+                                            <textarea class="create-event__form-input create-event__form-input--textarea"></textarea>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="create-event__form-group create-event__form-group--halfwidth">
+                                    <label class="create-event__form-label">
+                                        Формат
+                                    </label>
+                                    <div class="create-event__form-select">
+                                        <select name="role" class="js-custom-select">
+                                            <option value="1">Лекция</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
                                     </div>
-                                    <div class="event__info-item">
-                                        <div class="event__info-item-key">
-                                            Время начала
-                                        </div>
-                                        <div class="event__info-item-value">
-                                            10:00
-                                        </div>
+                                </div>
+                                <div class="create-event__form-group create-event__form-group--halfwidth">
+                                    <label class="create-event__form-label">
+                                        Продукт
+                                    </label>
+                                    <div class="create-event__form-select">
+                                        <select name="role" class="js-custom-select">
+                                            <option value="1">Лекция</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
                                     </div>
-                                    <div class="event__info-item">
-                                        <div class="event__info-item-key">
-                                            Продолжительность
-                                        </div>
-                                        <div class="event__info-item-value">
-                                            6 ч.
-                                        </div>
+                                </div>
+                                <div class="create-event__form-group create-event__form-group--halfwidth">
+                                    <label class="create-event__form-label">
+                                        Руководитель
+                                    </label>
+                                    <div class="create-event__form-select">
+                                        <select name="role" class="js-custom-select">
+                                            <option value="1">Петров А.А.</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
                                     </div>
-                                    <div class="event__info-item">
-                                        <div class="event__info-item-key">
-                                            Место проведения
+                                </div>
+                                <div class="create-event__form-group create-event__form-group--halfwidth">
+                                    <label class="create-event__form-label">
+                                        Планируемое количество участников
+                                    </label>
+                                    <div class="create-event__form-select">
+                                        <select name="role" class="js-custom-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="create-event__form-group create-event__form-group--fullwidth">
+                                    <label class="create-event__form-label">
+                                        Лекторы
+                                    </label>
+                                    <div class="create-event__lectors">
+                                        <div class="create-event__lectors-header">
+                                            <span class="create-event__lectors-heading">
+                                                № лекции
+                                            </span>
+                                            <span class="create-event__lectors-heading">
+                                                Лектор
+                                            </span>
+                                            <span class="create-event__lectors-heading">
+                                                Логистика
+                                            </span>
+                                            <span class="create-event__lectors-heading">
+                                                Статус
+                                            </span>
                                         </div>
-                                        <div class="event__info-item-value">
-                                            Тверская улица, дом 13, оф 425
+                                        <div class="create-event__lectors-card">
+                                            <div class="create-event__lectors-card-panel">
+                                                <div class="create-event__lectors-card-panel-item">
+                                                    Лекция 3
+                                                </div>
+                                                <div class="create-event__lectors-card-panel-item">
+                                                    <div class="create-event__lectors-select">
+                                                        <select name="role" class="js-custom-select">
+                                                            <option value="1">Петров А.А.</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="create-event__lectors-card-panel-item">
+                                                    <label class="create-event__lectors-checkbox">
+                                                        <input type="checkbox" class="create-event__lectors-checkbox-input" />
+                                                        <span class="create-event__lectors-checkbox-mark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="create-event__lectors-card-panel-item">
+                                                    <input type="text" class="create-event__lectors-input" />
+                                                </div>
+                                                <div class="create-event__lectors-card-panel-item">
+                                                    <a href="#" class="create-event__lectors-delete">
+                                                        <svg width="20" height="20" aria-hidden="true" class="icon-delete">
+                                                            <use xlink:href="#delete" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="create-event__lectors-card">
+                                            <div class="create-event__lectors-card-panel">
+                                                <div class="create-event__lectors-card-panel-item">
+                                                    Лекция 3
+                                                </div>
+                                                <div class="create-event__lectors-card-panel-item">
+                                                    <div class="create-event__lectors-select">
+                                                        <select name="role" class="js-custom-select">
+                                                            <option value="1">Петров А.А.</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="create-event__lectors-card-panel-item">
+                                                    <label class="create-event__lectors-checkbox">
+                                                        <input type="checkbox" class="create-event__lectors-checkbox-input" />
+                                                        <span class="create-event__lectors-checkbox-mark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="create-event__lectors-card-panel-item">
+                                                    <input type="text" class="create-event__lectors-input" />
+                                                </div>
+                                                <div class="create-event__lectors-card-panel-item">
+                                                    <a href="#" class="create-event__lectors-delete">
+                                                        <svg width="20" height="20" aria-hidden="true" class="icon-delete">
+                                                            <use xlink:href="#delete" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="create-event__lectors-btns">
+                                            <a href="#" class="btn create-event__lectors-btn">
+                                                Добавить
+                                            </a>
+                                            <a href="#" class="btn btn--grey create-event__lectors-btn">
+                                                Проверить
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="event__bottom-block">
-                                <div class="event__row">
-                                    <div class="event__left-col">
-                                        <div class="event__main-info">
-                                            <div class="event__main-info-item">
-                                                <div class="event__main-info-item-key">
-                                                    Формат
-                                                </div>
-                                                <div class="event__main-info-item-value">
-                                                    Мероприятие, посвященное заболеванию (медицинский отдел)
-                                                </div>
-                                            </div>
-                                            <div class="event__main-info-item">
-                                                <div class="event__main-info-item-key">
-                                                    Продукт
-                                                </div>
-                                                <div class="event__main-info-item-value">
-                                                    Филлеры
-                                                </div>
-                                            </div>
-                                            <div class="event__main-info-item">
-                                                <div class="event__main-info-item-key">
-                                                    Обоснование
-                                                </div>
-                                                <div class="event__main-info-item-value">
-                                                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
-                                                    создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в
-                                                    электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus
-                                                    PageMaker, в шаблонах которых используется Lorem Ipsum.
-                                                </div>
-                                            </div>
-                                            <div class="event__main-info-item">
-                                                <div class="event__main-info-item-key">
-                                                    Участники мероприятия
-                                                </div>
-                                                <div class="event__main-info-summary">
-                                                    <div class="event__main-info-summary-item">
-                                                        <div class="event__main-info-summary-key">
-                                                            Руководитель
-                                                        </div>
-                                                        <div class="event__main-info-summary-value">
-                                                            <strong>Никоноров А.И.</strong>
-                                                        </div>
-                                                    </div>
-                                                    <div class="event__main-info-summary-item">
-                                                        <div class="event__main-info-summary-key">
-                                                            Инициатор
-                                                        </div>
-                                                        <div class="event__main-info-summary-value">
-                                                            <strong>Иванова И.И.</strong>
-                                                        </div>
-                                                    </div>
-                                                    <div class="event__main-info-summary-item">
-                                                        <div class="event__main-info-table">
-                                                            <table>
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>
-                                                                            Лекторы
-                                                                        </th>
-                                                                        <th>
-                                                                            Оценка
-                                                                        </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <strong>
-                                                                                Потанин Г.А.
-                                                                            </strong>
-                                                                            - тут будут перечислены через запятую регалии данного лектора
-                                                                        </td>
-                                                                        <td>
-                                                                            <strong>
-                                                                                3
-                                                                            </strong>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <strong>
-                                                                                Петров Д.В
-                                                                            </strong>
-                                                                            - тут будут перечислены через запятую регалии данного лектора
-                                                                        </td>
-                                                                        <td>
-                                                                            <strong>
-                                                                                9
-                                                                            </strong>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <strong>
-                                                                                Петров Д.В
-                                                                            </strong>
-                                                                            - тут будут перечислены через запятую регалии данного лектора
-                                                                        </td>
-                                                                        <td>
-                                                                            <strong>
-                                                                                7,8
-                                                                            </strong>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <strong>
-                                                                                Харитонов Г.В.
-                                                                            </strong>
-                                                                            - тут будут перечислены через запятую регалии данного лектора
-                                                                        </td>
-                                                                        <td>
-                                                                            <strong>
-                                                                                10
-                                                                            </strong>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <strong>
-                                                                                Карташов А.А.
-                                                                            </strong>
-                                                                            - тут будут перечислены через запятую регалии данного лектора
-                                                                        </td>
-                                                                        <td>
-                                                                            <strong>
-                                                                                6,7
-                                                                            </strong>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <strong>
-                                                                                Треснев С.А.
-                                                                            </strong>
-                                                                            - тут будут перечислены через запятую регалии данного лектора
-                                                                        </td>
-                                                                        <td>
-                                                                            <strong>
-                                                                                8
-                                                                            </strong>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                    <div class="event__main-info-summary-item">
-                                                        <div class="event__main-info-table">
-                                                            <table>
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>
-                                                                            Оценка обратной связи
-                                                                        </th>
-                                                                        <th>
-                                                                            Оценка
-                                                                        </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            Соответствует ли программа и наполнение мероприятия Вашим профессиональным ожиданиям?
-                                                                        </td>
-                                                                        <td>
-                                                                            <strong>
-                                                                                3
-                                                                            </strong>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            Как Вы оцениваете для себя формат мероприятия?
-                                                                        </td>
-                                                                        <td>
-                                                                            <strong>
-                                                                                9
-                                                                            </strong>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            Насколько ожидаемо, что Вы примете участие в подобном мероприятии в будущем или посоветуете знакомым?
-                                                                        </td>
-                                                                        <td>
-                                                                            <strong>
-                                                                                7,8
-                                                                            </strong>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                    <div class="event__main-info-summary-item">
-                                                        <div class="event__main-info-summary-key">
-                                                            Общая оценка мероприятия: 7,8
-                                                        </div>
-                                                    </div>
-                                                    <div class="event__main-info-summary-item">
-                                                        <div class="event__main-info-summary-key">
-                                                            Планируемое количество участников: 20
-                                                        </div>
-                                                    </div>
-                                                    <div class="event__main-info-summary-item">
-                                                        <div class="event__main-info-summary-key">
-                                                            Фактическое количество участников:
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <form action="/" method="POST" class="event__edit-form">
-                                                <input type="text" class="event__edit-form-input" />
-                                                <button type="submit" class="btn event__edit-form-submit">Сохранить</button>
-                                            </form>
+                                <div class="create-event__form-group create-event__form-group--halfwidth">
+                                    <label class="create-event__form-label">
+                                        Прикрепить файлы
+                                    </label>
+                                    <div class="create-event__file-upload js-file-upload">
+                                        <div class="create-event__file-upload-dropzone">
+                                            <label class="create-event__file-label">
+                                                <input type="file" name="file1" />
+                                            </label>
+                                            <label class="create-event__file-label">
+                                                <input type="file" name="file2" />
+                                            </label>
+                                            <label class="create-event__file-label">
+                                                <input type="file" name="file3" />
+                                            </label>
+                                        </div>
+                                        <div class="create-event__files">
+                                            <!-- <div class="create-event__file">
+                            <svg width="20" height="20" aria-hidden="true" class="icon-documents">
+                                <use xlink:href="#documents" />
+                            </svg>
+                            Название файла
+                        </div> -->
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="create-event__form-group create-event__form-group--fullwidth">
+                                    <button type="submit" class="btn create-event__submit">Сохранить</button>
+                                </div>
+                            </form>
                         </div>
                     </section>
                 </div>
