@@ -222,7 +222,6 @@
                             </svg>
                         </a>
                     </div>
-
                     <section class="event">
                         <h2 class="section-heading">
                             Отчеты
@@ -504,6 +503,71 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
             <script src="js/app.js"></script>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var createLineBtn = document.querySelector('.create-event__lectors-btn');
+                    var createEventCards = document.querySelector('.create-event__lectors-cards');
+                    var lectureNumber = 0;
+                    var cardMarkUp = number => `
+                        <div class="create-event__lectors-card-panel">
+                            <div class="create-event__lectors-card-panel-item">
+                                ${number}
+                            </div>
+                            <div class="create-event__lectors-card-panel-item">
+                                <div class="create-event__lectors-select">
+                                    <select name="role" class="js-custom-select">
+                                        <option value="1">Петров А.А.</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="create-event__lectors-card-panel-item">
+                                <label class="create-event__lectors-checkbox">
+                                    <input type="checkbox" class="create-event__lectors-checkbox-input" />
+                                    <span class="create-event__lectors-checkbox-mark"></span>
+                                </label>
+                            </div>
+                            <div class="create-event__lectors-card-panel-item">
+                                <input type="text" class="create-event__lectors-input" />
+                            </div>
+                            <div class="create-event__lectors-card-panel-item">
+                                <a href="#" class="create-event__lectors-delete">
+                                    <svg width="20" height="20" aria-hidden="true" class="icon-delete">
+                                        <use xlink:href="#delete" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    `;
+
+                    if (createLineBtn && createEventCards) {
+                        createLineBtn.addEventListener('click', function(event) {
+                            event.preventDefault();
+                            console.log('Create event btn clicked');
+
+                            var newCard = document.createElement('div');
+
+                            newCard.className = 'create-event__lectors-card';
+
+                            newCard.innerHTML = cardMarkUp(lectureNumber);
+                            lectureNumber++;
+                            createEventCards.appendChild(newCard);
+
+                            window.initCustomSelects();
+
+                            var deleteBtn = newCard.querySelector('.create-event__lectors-delete');
+
+                            deleteBtn.addEventListener('click', event => {
+                                event.preventDefault();
+                                newCard.remove();
+                                lectureNumber--;
+                            });
+                        });
+                    }
+                });
+            </script>
         </div>
     </body>
 </html>
