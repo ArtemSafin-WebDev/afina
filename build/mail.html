@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic" rel="stylesheet" type="text/css" />
         <title>Title</title>
     </head>
     <style>
@@ -10,15 +11,29 @@
             padding: 0;
             margin: 0;
             min-width: 320px;
-            -webkit-text-size-adjust: none;
+            -webkit-text-size-adjust: 100%;
         }
 
         @media only screen and (max-width: 750px) {
             .wrapper-table {
                 width: 100% !important;
+                max-width: none !important;
             }
         }
     </style>
+    <!--[if mso]>
+        <style type="text/css">
+            p {
+                font-family: sans-serif !important;
+            }
+            h1 {
+                font-family: sans-serif !important;
+            }
+            a {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
     <body>
         <table
             style="
@@ -42,10 +57,14 @@
             </tr>
             <tr>
                 <td align="center" style="text-align: center;">
+                    <!--[if (gte mso 9)|(IE)]>
+          <table width="725" align="center"><tr><td style="padding-top:0; padding-bottom:0; padding-right:0; padding-left:0; margin:0px;">
+          <![endif]-->
                     <table
                         style="
               padding: 0;
-              width: 725px;
+              width: 100%;
+              max-width: 725px;
               border-collapse: collapse;
               background: #fff;
               overflow: hidden;
@@ -57,7 +76,6 @@
                         align="center"
                         cellpadding="0"
                         cellspacing="0"
-                        width="725"
                         class="wrapper-table"
                     >
                         <tr>
@@ -72,7 +90,7 @@
                     text-decoration: none;
                   "
                                 >
-                                    <img src="img/logo.png" width="145" style="vertical-align: middle; display: inline-block;" />
+                                    <img src="img/logo.png" width="145" style="vertical-align: middle; display: inline-block; height: auto;" height="auto" />
                                 </a>
                             </td>
                         </tr>
@@ -102,6 +120,9 @@
                             </td>
                         </tr>
                     </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+          </td></tr></table><![endif]-->
                 </td>
             </tr>
             <tr class="hide-mobile">
