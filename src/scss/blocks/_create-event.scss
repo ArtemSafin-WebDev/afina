@@ -223,7 +223,7 @@
 .create-event__lectors-card-panel {
     grid-column: 1 / -1;
     background-color: #f3f3f6;
-    grid-template-columns: 11rem 20rem 15rem 1fr 5.6rem;
+    grid-template-columns: 11rem minmax(22rem, auto) 15rem 1fr 5.6rem;
    
     border-radius: .5rem;
     height: 4.4rem;
@@ -299,6 +299,7 @@
 
     .choices__list--dropdown .choices__list {
         max-height: none;
+        overflow-x: hidden;
     }
 
     .choices__list--dropdown .choices__item {

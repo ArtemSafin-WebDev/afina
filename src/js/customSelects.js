@@ -7,7 +7,8 @@ function initializeCustomSelects() {
         new Choices(select, {
             searchEnabled: false,
             itemSelectText: '',
-            shouldSort: false
+            shouldSort: false,
+            position: 'bottom'
         });
     });
 }
