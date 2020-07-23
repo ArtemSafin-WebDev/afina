@@ -2341,6 +2341,26 @@ img.lazyload:not([src]) {
     background-color: var(--primary-color);
     color: white; }
 
+.filters__date-range-input {
+  padding: 0;
+  border-radius: 1.5rem !important;
+  min-height: auto;
+  border: 1px solid var(--blue-text);
+  background: transparent;
+  font-size: 1.4rem;
+  padding: 0;
+  padding: 0.5rem 1rem; }
+  .light-bg .filters__date-range-input {
+    border-color: #dddfe8; }
+  .filters__date-range-input::-webkit-input-placeholder {
+    color: var(--text-color); }
+  .filters__date-range-input:-moz-placeholder {
+    color: var(--text-color); }
+  .filters__date-range-input::-moz-placeholder {
+    color: var(--text-color); }
+  .filters__date-range-input:-ms-input-placeholder {
+    color: var(--text-color); }
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;

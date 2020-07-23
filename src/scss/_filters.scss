@@ -110,3 +110,24 @@
         color: white;
     }
 }
+
+
+.filters__date-range-input {
+    padding: 0;
+    border-radius: 1.5rem !important;
+    min-height: auto;
+    border: 1px solid var(--blue-text);
+    background: transparent;
+    // min-width: 16rem;
+    font-size: 1.4rem;
+    padding: 0;
+    padding: 0.5rem 1rem;
+    
+    .light-bg & {
+        border-color: #dddfe8;
+    }
+
+    @include placeholder {
+        color: var(--text-color);
+    }
+}
