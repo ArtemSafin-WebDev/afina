@@ -3871,7 +3871,6 @@ img.lazyload:not([src]) {
   border-radius: 1rem !important;
   background-color: white;
   margin-top: 0.5rem;
-  max-height: auto;
   word-break: initial;
   border-color: var(--blue-text); }
   .light-bg .create-event__lectors-select .choices__list--dropdown {
@@ -3882,7 +3881,7 @@ img.lazyload:not([src]) {
   margin-bottom: 0.5rem; }
 
 .create-event__lectors-select .choices__list--dropdown .choices__list {
-  max-height: none;
+  max-height: 25rem;
   overflow-x: hidden; }
 
 .create-event__lectors-select .choices__list--dropdown .choices__item {

@@ -283,7 +283,7 @@
         border-radius: 1rem !important;
         background-color: white;
         margin-top: 0.5rem;
-        max-height: auto;
+        
         word-break: initial;
         border-color: var(--blue-text);
 
@@ -298,7 +298,7 @@
     }
 
     .choices__list--dropdown .choices__list {
-        max-height: none;
+        max-height: 25rem;
         overflow-x: hidden;
     }
 
