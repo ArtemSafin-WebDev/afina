@@ -8,7 +8,9 @@ function initializeCustomSelects() {
             searchEnabled: false,
             itemSelectText: '',
             shouldSort: false,
-            position: 'bottom'
+            position: select.hasAttribute("data-position-top") ? 'top' : 'bottom',
+            searchEnabled: select.hasAttribute("data-has-search") ? true : false,
+            noResultsText: 'Ничего не найдено'
         });
     });
 }

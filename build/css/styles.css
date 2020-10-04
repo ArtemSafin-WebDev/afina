@@ -1908,6 +1908,9 @@ img.lazyload:not([src]) {
   overflow: hidden; }
   .sidebar-collapsed .page-content {
     padding-left: 10rem; }
+  @media only screen and (max-width: 768px) {
+    .page-content {
+      padding-left: 0 !important; } }
 
 .page-sidebar {
   width: 29rem;
@@ -1918,7 +1921,8 @@ img.lazyload:not([src]) {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%; }
+  height: 100%;
+  z-index: 40; }
   .sidebar-collapsed .page-sidebar {
     width: 10rem; }
 
@@ -1942,6 +1946,10 @@ img.lazyload:not([src]) {
       -ms-flex-positive: 1;
           flex-grow: 1;
   position: relative; }
+  @media only screen and (max-width: 768px) {
+    .wrapper {
+      padding: 2rem;
+      padding-left: 12rem; } }
 
 .sidebar {
   display: -webkit-box;
@@ -4093,6 +4101,12 @@ img.lazyload:not([src]) {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline; }
+  @media only screen and (max-width: 768px) {
+    .poll__form-answer {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-right: -4rem;
+      margin-bottom: -2rem; } }
 
 .poll__form-radio {
   display: -webkit-box;
@@ -4103,6 +4117,9 @@ img.lazyload:not([src]) {
           align-items: center;
   margin-right: 4rem;
   cursor: pointer; }
+  @media only screen and (max-width: 768px) {
+    .poll__form-radio {
+      margin-bottom: 1rem; } }
 
 .poll__form-radio-input {
   border: 0;
@@ -4138,6 +4155,13 @@ img.lazyload:not([src]) {
     -webkit-transition: opacity .2s;
     transition: opacity .2s;
     opacity: 0; }
+  @media only screen and (max-width: 768px) {
+    .poll__form-radio-checkmark {
+      width: 12px;
+      height: 12px; }
+      .poll__form-radio-checkmark::before {
+        width: 6px;
+        height: 6px; } }
 
 .poll__form-radio-input:checked ~ .poll__form-radio-checkmark::before {
   opacity: 1; }

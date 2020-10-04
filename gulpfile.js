@@ -40,7 +40,7 @@ gulp.task('nunjucks-recompile-all', function() {
                 path: ['./src/templates', './src/img/symbol']
             })
         )
-        .pipe(prettier())
+       
         .pipe(gulp.dest('build'))
         .pipe(browserSync.stream());
 });
@@ -54,7 +54,7 @@ gulp.task('nunjucks', function() {
                 path: ['./src/templates', './src/img/symbol']
             })
         )
-        .pipe(prettier())
+     
         .pipe(gulp.dest('build'))
         .pipe(browserSync.stream());
 });

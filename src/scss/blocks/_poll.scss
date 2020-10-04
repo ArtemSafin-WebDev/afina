@@ -44,6 +44,12 @@
 .poll__form-answer {
     display: flex;
     align-items: baseline;
+
+    @include breakpoint(mobile) {
+        flex-wrap: wrap;
+        margin-right: -4rem;
+        margin-bottom: -2rem;
+    }
 }
 
 
@@ -52,6 +58,11 @@
     align-items: center;
     margin-right: 4rem;
     cursor: pointer;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 1rem;
+    }
+
 }
 
 
@@ -80,6 +91,16 @@
         transform: translate(-50%, -50%);
         transition: opacity .2s;
         opacity: 0;
+    }
+
+
+    @include breakpoint(mobile) {
+        width: 12px;
+        height: 12px;
+        &::before {
+            width: 6px;
+            height: 6px;
+        }
     }
 }
 
